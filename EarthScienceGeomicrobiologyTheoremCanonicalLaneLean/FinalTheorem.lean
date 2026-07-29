@@ -1,0 +1,18 @@
+import canonicalLaneMathlib.AdmissibleClass
+import EarthScienceGeomicrobiologyTheoremCanonicalLaneLean.GeomicrobialKinetics
+import EarthScienceGeomicrobiologyTheoremCanonicalLaneLean.MicrobialPopulationDynamics
+import EarthScienceGeomicrobiologyTheoremCanonicalLaneLean.MineralMicrobeInteractions
+import EarthScienceGeomicrobiologyTheoremCanonicalLaneLean.SubsurfaceTransport
+import EarthScienceGeomicrobiologyTheoremCanonicalLaneLean.BiogeochemicalCycle
+
+namespace HautevilleHouse
+namespace EarthScienceGeomicrobiologyTheoremCanonicalLaneLean
+
+def ConstrainedGeomicrobiologyClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_geomicrobiology_endgame (A : AdmissibleClass) : ConstrainedGeomicrobiologyClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end EarthScienceGeomicrobiologyTheoremCanonicalLaneLean
+end HautevilleHouse
